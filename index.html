@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meneses 1998</title>
+<style>
+:root { --ground: #ECEBE7; --ink: #1B1B1A; --muted: #62615D; --rule: #D5D3CD; --sheet: #FFFFFF; --note: #FFF6C9; --note-ink: #3B3420; }
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #1C1C1B; --ink: #EDECE8; --muted: #A3A19B; --rule: #3A3936; --sheet: #2A2A28; --note: #3A3527; --note-ink: #EFE6C4; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+.wrap { max-width: 1480px; margin: 0 auto; padding: 32px 16px 96px; }
+header h1 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+header p { margin: 6px 0 0; color: var(--muted); }
+h2.group { margin: 56px 0 0; padding-bottom: 8px; border-bottom: 1px solid var(--rule); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+figure { margin: 32px 0 0; }
+figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; margin-bottom: 10px; font-size: 13px; }
+figcaption span { color: var(--muted); font-variant-numeric: tabular-nums; }
+figcaption a { color: inherit; }
+.frame { position: relative; overflow: hidden; width: 100%; background: var(--sheet); box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 10px 28px rgba(0,0,0,.07); }
+.frame iframe { position: absolute; top: 0; left: 0; border: 0; transform-origin: 0 0; background: #fff; }
+.note { max-width: 560px; margin: 24px 0 0; padding: 14px 16px; background: var(--note); color: var(--note-ink); white-space: pre-line; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Meneses 1998</h1>
+<p>Design canvas by Lucas Teixeira, 6 artboards, in Portuguese. Exported from claude.ai on 9 Oct 2026.</p>
+</header>
+<figure data-w="1440" data-h="2000">
+  <figcaption><strong>Início</strong><span>1440 × 2000 · <a href="boards/Main.html">open at full size</a></span></figcaption>
+  <div class="frame" style="aspect-ratio: 1440 / 2000; max-width: 1440px"><iframe src="boards/Main.html" width="1440" height="2000" title="Início" loading="lazy" scrolling="no"></iframe></div>
+</figure>
+<figure data-w="1440" data-h="840">
+  <figcaption><strong>Artes visuais</strong><span>1440 × 840 · <a href="boards/ArtesVisuais.html">open at full size</a></span></figcaption>
+  <div class="frame" style="aspect-ratio: 1440 / 840; max-width: 1440px"><iframe src="boards/ArtesVisuais.html" width="1440" height="840" title="Artes visuais" loading="lazy" scrolling="no"></iframe></div>
+</figure>
+<figure data-w="1440" data-h="800">
+  <figcaption><strong>Reel</strong><span>1440 × 800 · <a href="boards/Reel.html">open at full size</a></span></figcaption>
+  <div class="frame" style="aspect-ratio: 1440 / 800; max-width: 1440px"><iframe src="boards/Reel.html" width="1440" height="800" title="Reel" loading="lazy" scrolling="no"></iframe></div>
+</figure>
+<figure data-w="1440" data-h="2150">
+  <figcaption><strong>Sobre</strong><span>1440 × 2150 · <a href="boards/Sobre.html">open at full size</a></span></figcaption>
+  <div class="frame" style="aspect-ratio: 1440 / 2150; max-width: 1440px"><iframe src="boards/Sobre.html" width="1440" height="2150" title="Sobre" loading="lazy" scrolling="no"></iframe></div>
+</figure>
+<figure data-w="1440" data-h="5900">
+  <figcaption><strong>Estrondo, página de obra</strong><span>1440 × 5900 · <a href="boards/Estrondo.html">open at full size</a></span></figcaption>
+  <div class="frame" style="aspect-ratio: 1440 / 5900; max-width: 1440px"><iframe src="boards/Estrondo.html" width="1440" height="5900" title="Estrondo, página de obra" loading="lazy" scrolling="no"></iframe></div>
+</figure>
+<p class="note">Mesmo sistema do protótipo navegável em prototipo--analuizameneses.netlify.app
+
+Newsreader para a voz, Courier Prime para os dados. 12 / 18 / 28 / capa, um peso.
+Fundo #F5F4FC, carvão #41463d, violeta #9d8df1 nos sublinhados, periwinkle #b8cdf8 nos fios.
+
+A página de obra mostra 8 das 35 pranchas de estrondo. O vídeo da capa aparece aqui como fotograma parado.</p>
+<figure data-w="390" data-h="2450">
+  <figcaption><strong>Início, celular</strong><span>390 × 2450 · <a href="boards/Celular.html">open at full size</a></span></figcaption>
+  <div class="frame" style="aspect-ratio: 390 / 2450; max-width: 390px"><iframe src="boards/Celular.html" width="390" height="2450" title="Início, celular" loading="lazy" scrolling="no"></iframe></div>
+</figure>
+</div>
+<script>
+function fit() {
+  document.querySelectorAll("figure[data-w]").forEach(function (f) {
+    var w = +f.dataset.w, h = +f.dataset.h;
+    var s = Math.min(1, f.parentElement.clientWidth / w);
+    var frame = f.querySelector(".frame");
+    frame.style.width = (w * s) + "px";
+    frame.style.height = (h * s) + "px";
+    f.querySelector("iframe").style.transform = "scale(" + s + ")";
+  });
+}
+addEventListener("resize", fit);
+fit();
+</script>
+</body>
+</html>
